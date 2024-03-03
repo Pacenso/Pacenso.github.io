@@ -20,8 +20,11 @@ dl {
     padding: 0;
 }
 img {
+    display: block;
     width: 50%;
     height: 20%;
+    margin: 50px;
+    float: center;
 }
   /* Create two columns/boxes that floats next to each other */
 nav {
@@ -30,18 +33,23 @@ nav {
     background: rgb(0, 119, 0);
     padding: 10px;
 }
+.center {
+  margin: auto;
+  width: 50%;
+}
 /* Style the header */
 .header {
     padding: 20px;
+    background-color: #cf9800;
     text-align: center;
-  }
+}
   
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
     background-color: #333;
   }
-  
+
   /* Style the topnav links */
   .topnav a {
     float: left;
@@ -57,3 +65,25 @@ nav {
     background-color: beige;
     color: #333;
   }
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other 
+instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
