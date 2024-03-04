@@ -16,6 +16,7 @@ a {
 }
 dl {
     list-style-type: none;
+    font-size: large;
     margin: 0;
     padding: 0;
 }
